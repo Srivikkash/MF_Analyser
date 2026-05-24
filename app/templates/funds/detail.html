@@ -1,0 +1,7 @@
+{% extends 'base/layout.html' %}{% block content %}
+<h3>{{ detail.meta.scheme_name }}</h3>
+<p>Latest NAV: {{ analytics.latest_nav }}</p>
+<div class="row g-3"><div class="col-md-4">1Y CAGR: {{ analytics.cagr_1y }}</div><div class="col-md-4">3Y CAGR: {{ analytics.cagr_3y }}</div><div class="col-md-4">5Y CAGR: {{ analytics.cagr_5y }}</div></div>
+<canvas id="navChart" height="100"></canvas>
+<script>window.navData={{analytics.nav|tojson}};window.navDates={{analytics.dates|tojson}};</script>
+{% endblock %}

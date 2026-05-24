@@ -1,0 +1,4 @@
+{% extends 'base/layout.html' %}{% block content %}
+<form><input name="q" class="form-control" placeholder="Search" value="{{q}}"></form>
+<div id="funds" class="mt-3">{% for f in funds %}<div class="border p-2 mb-2"><a href="/funds/{{f.schemeCode}}">{{f.schemeName}}</a></div>{% endfor %}</div>
+{% endblock %}

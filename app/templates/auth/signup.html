@@ -1,0 +1,9 @@
+{% extends 'base/layout.html' %}{% block content %}
+<h3>Signup</h3>
+<form method='post' class='vstack gap-2'>
+<input class='form-control' name='name' placeholder='Name' required>
+<input class='form-control' name='email' type='email' placeholder='Email' required>
+<input class='form-control' name='password' type='password' placeholder='Password' required>
+<button class='btn btn-success'>Create account</button>
+</form>
+{% endblock %}

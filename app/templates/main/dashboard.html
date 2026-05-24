@@ -1,0 +1,4 @@
+{% extends 'base/layout.html' %}{% block content %}
+<h2>Trending Funds</h2>
+<div class="row">{% for f in funds %}<div class="col-md-4"><div class="card mb-3"><div class="card-body"><a href="/funds/{{f.schemeCode}}">{{f.schemeName}}</a></div></div></div>{% endfor %}</div>
+{% endblock %}

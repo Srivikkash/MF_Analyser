@@ -1,0 +1,13 @@
+Flask==3.0.3
+Flask-Login==0.6.3
+Flask-Caching==2.3.0
+pymongo==4.8.0
+dnspython==2.6.1
+requests==2.32.3
+pandas==2.2.2
+numpy==1.26.4
+yfinance==0.2.51
+mftool==3.5.22
+pyxirr==0.10.4
+gunicorn==22.0.0
+python-dotenv==1.0.1
